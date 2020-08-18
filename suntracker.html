@@ -113,18 +113,20 @@
 												</td>
 												<td style="vertical-align: top;">
 													<h3>The Solution</h3>
-													<p></p>
+													<p>We settled on utilizing photoresistors to read ambient light levels in order to determine if the solar panel would be lined up with the sun. After designing the CAD mount and 3D-printing the housing for the photoresistors, we worked on developing a logic system to translate photoresistor values to impart motion on the stepper and drill motors. Multiple SPST relays and a DPDT Relay were used to allow a low current device like the Arduino to regulate power from the battery and control the 12V motors. A continuous loop would be run every 15 minutes to ensure all 4 photoresistors were above the necessary threshold for full sunlight.</p>
 
 												</td>
 											</tr>	
 											<tr>
 												<td>
 													<br>
+													<h3>Timelapse</h3>
 													<img src = "images/suntrackertimelapse.gif" width="80%" alt="Sun Tracker Timelapse" class="center">
 												</td>
 
 												<td>
 													<br>
+													<h3>Video Demonstration</h3>
 													<img src = "images/suntrackervideo.gif" width="80%" alt="Sun Tracker Video GIF" class="center">
 												</td>
 											</tr>
