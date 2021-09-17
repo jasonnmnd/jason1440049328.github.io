@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jason Dong - Duke University</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload no-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="index.html">JD</a></h1>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Welcome</a></li>
+									<li>
+										<li class="current"><a href="index.html#features-wrapper">My Projects</a>
+										<ul>
+											<li><a href="suntracker.html">Sun Tracking Power Supply</a></li>
+											<li><a href="tapebubble.html">Automated Aircraft Damage Inspection and Tape Bubble Study</a></li>
+											<li><a href="skunkfeeder.html">Automatic Skunk Feeder</a></li>
+											<li><a href="igem2018.html">Engineered Microbes to Sense and Destroy Biofilms</a></li>
+											<li><a href="igem2017.html">Engineered Microbes to Sense and Detect ETEC</a></li>
+
+										</ul>
+									</li>
+									<li><a href="resume.html">Résumé</a></li>
+									<li><a href="aboutme.html">About Me</a></li>
+									<li><a href="contactme.html">Contact Me</a></li>
+								</ul>
+							</nav>
+
+					</header>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+								<article>
+
+									<h2>ADS-B Extension via UAV</h2>
+									<h3>MAY 2021 - AUG 2021</h3>
+
+									<table>
+										<tbody>
+											<tr>
+												<td style="vertical-align: top;" width = "50%">
+													<h3> Group Members </h3>
+													<ul>
+														<li>Jason Dong</li>
+														<li>Adam Wiggenhorn</li>
+														<li>Adonis Davis</li>
+														<li>Alec Philippe</li>
+													</ul>
+
+													<h3>Mentor</h3>
+													<ul>
+														<li>Mr. Ryan Wolfarth</li>
+													</ul>
+												</td>
+
+												<td width = "50%">
+													<br>
+													<img src = "images/adsb_1.png" width="100%" alt="ADSB" class="center">
+											</tr>
+											<tr>
+												<td>
+													<br>
+													<img src = "images/adsb_2.png" width="80%" alt="ADSB" class="center">
+												</td>
+												<td style="vertical-align: top;">
+													<h3>The Task</h3>
+													<p> Automatic Dependent Surveillance - Broadcast (ADS-B) is a surveillance technology in which an aircraft shares its position and periodically broadcasts it, enabling it to be tracked. It is often used by air traffic control as a secondary form of communication and doesn't require input from the pilots on the other end. However, civilians can also intercept these signals and create a real-time map of plane locations and their data. ADS-B technology is of interest in other projects at AFLCMC, and a greater extension in range to current capabilities would greatly boost other capabilities. </p>
+
+												</td>
+											</tr>
+											<tr>
+												<td style="vertical-align: top;">
+													<h3> Our Approach </h3>
+													<ul>
+														<li>Understand and conform to design specifications for payload in regards to weight, electrical load analysis, battery, and broadcasting signals.</li>
+														<li>Utilize a Raspberry Pi and PiAware to run, collect, and store ADS-B data.</li>
+														<li>Design a robust system with scripts in Python to ensure data collection is always being performed, and implement failsafes and visual indicators.</li>
+														<li>Design housing unit and peripherals to hold all sensitive electronics.</li>
+
+												</td>
+
+												<td>
+													<br>
+													<img src = "images/adsb_3.png" width="80%" alt="ADSB" class="center">
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<br>
+													<img src = "images/adsb_4.jpg" width="80%" alt="ADSB" class="center">
+												</td>
+												<td style="vertical-align: top;">
+													<h3>The Solution</h3>
+													<p>By utilizing a Raspberry Pi 3 with PiAware software, we were able to intercept and collect ADS-B data at 1090MHz and stream data in comma separated format. Python scripts were designed to constantly check on the data collection process with multi-threading to be able to check active background processes. Data files were generated every minute, periodically updating the time via a GPS to ensure that in the event of a failure, data is retained up to the minute. A crontab was used to automatically run scripts on the bootup of the Pi. All software was designed with the goal of being able to start data collection without the need of a keyboard, and start with the turn of a switch. Additionally, peripheral indicators were triggered within the scripts to display active power, GPS connectivity, and data collection status. A custom housing unit was designed and machined to fit the specifications provided by the testing team. In comforming to their expectations, we minimized the payload weight and mitigated potential hazards through electrical load analysis and using a NiMH battery. </p>
+
+												</td>
+											</tr>	
+											<tr>
+												<td>
+													<br>
+													<h3>Timelapse</h3>
+													<img src = "images/suntrackertimelapse.gif" width="80%" alt="Sun Tracker Timelapse" class="center">
+												</td>
+
+												<td>
+													<br>
+													<h3>Video Demonstration</h3>
+													<img src = "images/suntrackervideo.gif" width="80%" alt="Sun Tracker Video GIF" class="center">
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+
+
+
+
+
+								</article>
+
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; Jason Dong. All rights reserved</li> <li>HTML Template From HTML5UP, Edited For Personal Use</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
