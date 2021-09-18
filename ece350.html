@@ -70,34 +70,39 @@
 												</td>
 
 												<td width = "50%">
-													
+													<h3> Schematic Overview </h3>
 													<br>
 													<img src = "images/ece350_4.png" width="80%" alt="Schematic" class="center">
 											</tr>
 											<tr>
 												<td>
 													<br>
+													<h3> Logisim Representation </h3>
 													<img src = "images/ece350_1.png" width="80%" alt="Processor Picture" class="center">
 												</td>
 												<td style="vertical-align: top;">
 													<br>
+													<h3>  </h3>
 													<img src = "images/ece350_2.png" width="80%" alt="Processor Picture" class="center">
 												</td>
 											</tr>
 											<tr>
 												<td style="vertical-align: top;">
-													<h3> Our Approach </h3>
-													<ul>
-														<li></li>
-														<li></li>
-														<li></li>
-														<li></li>
+													<h3> The Task </h3>
+													<p> The first part of the project involved designing and implementing a multi-cycle pipelined processor in Verilog. I designed a fully working processor in Logisim with an ALU, Register Files, and Boothe's Multiplication/ Non-Restoring Division module before incorporating all elements into a full processor. After thoroughly testing in Logisim, the finished product was coded in structural Verilog. This processor aheres to the (MIPS-like) Duke ISA which includes R-Type Instructions, I-Type Instructions, Jumps, Branches, Loads, and Stores. </p>
+													<p> Afterwards, the processor was incorporated into my final project design of a "Sludge Runner" game where the user controls a sprite left and right to avoid collision with falling obstacles. The user's goal is to finish the course as fast as possible and has the ability to speed up and slow down to try to beat the high score. The processor was used to trigger MIPS code for in-game conditions and collisions. Additionally, it was used for score tracking and the final score calculation. Reading from memory for sprites and text as well as the main collision logic was handled via behavioral Verilog.<a href="https://github.com/jason1440049328/Sludge-Runner">You can visit a clone of this repository here!</a></p>
+													
 
 												</td>
 
 												<td>
-													<h3>The Task</h3>
-													<p> </p>
+													<h3>My Approach</h3>
+													<ul>
+														<li>Design every component of the processor in Verilog for visualization and check data propogation</li>
+														<li>Build and translate each component to Verilog, test thoroughly with testbenches</li>
+														<li>Build and design final pipelined processor, stress test all instructions for correctness</li>
+														<li>Incorporate processor to use with game, incorporate MIPS instructions for score-keeping and game logic</li>
+														<li>Deploy onto Nexys A7 FPGA, interfacing with on-board buttons, audio, and display through a VGA screen </li>
 													
 												</td>
 											</tr>
@@ -107,16 +112,14 @@
 													<img src = "images/ece350_3.png" width="80%" alt="Verilog Code" class="center">
 												</td>
 												<td style="vertical-align: top;">
-													<h3>The Solution</h3>
-													<p><a href="https://github.com/jason1440049328/Sludge-Runner">You can visit a clone of this repository here!</a></p>
-
+													<br>
+													<h3>Video Demonstration</h3>
+													<img src = "images/ece350gif.gif" width="100%" alt="Sludge Runner GIF" class="center">
 												</td>
 											</tr>	
 											<tr>
 												<td>
-													<br>
-													<h3>Video Demonstration</h3>
-													<img src = "images/ece350gif.gif" width="100%" alt="Sludge Runner GIF" class="center">
+													
 												</td>
 											</tr>
 
